@@ -38,15 +38,3 @@ Reports are generated and sent back to the developers with the status of their c
         tag_with_sha: true
  ````
 
-Continuous delivery (CD) is the natural "next phase" of continuous integration (CI). Setting up a CI workflow will show us the entire picture of our workflow.
-
-Our repository contains a Dockerfile, source code, and tests for the Tic Tac Toe application.
-
-Our CI Workflow allows us to make code changes. Those changes will trigger an automated build and automated test. But, the automation does not create a deployable artifact.
-
-We will place our application into a Docker container. Then, we will have a deployable package. A deployable package enables CD.
-
-Because a Dockerfile is a text file, we are able to version it as source code. This configuration as code allowing us a single point of truth for our application.
-
-As you learned above, we need to turn that Dockerfile into a Docker image if we want to create a runtime instance. We are going to store that image in GitHub Packages.
-
